@@ -1,0 +1,36 @@
+.bg-common-color{
+    background: linear-gradient(#6642F6,#5F19E7);
+}
+.btn-width{
+    width: 35%;
+}
+.next-batch{
+    position: relative;
+    top: -90px;
+}
+.btn-next-batch{
+    width: 80%;
+    padding: 0px 5px;
+    margin: auto;
+}
+.details1 p{
+    margin-bottom: 25px;
+}
+.details2 p{
+    margin-bottom: 25px;
+}
+.course-speciality{
+    background: #F5F7FF;
+}
+.project-bg{
+    background:#cfd0d1;
+}
+.course-speciality-img img{
+    width: 40%;
+}
+.bg-about{
+    background: rgb(209, 207, 207);
+}
+.cursor-pointer{
+    cursor: pointer;
+}
