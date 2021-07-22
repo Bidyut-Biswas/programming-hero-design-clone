@@ -4,6 +4,16 @@
 .btn-width{
     width: 35%;
 }
+.account{
+    background: #e1e1e2;
+}
+.user-icon{
+    font-size: 55px;
+    text-align: center;
+}
+.cart-message-size{
+    font-size: 12px;
+}
 .next-batch{
     position: relative;
     top: -90px;
