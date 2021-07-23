@@ -2,7 +2,7 @@
     background: linear-gradient(#6642F6,#5F19E7);
 }
 .btn-width{
-    width: 35%;
+    width:fit-content;
 }
 .account{
     background: #e1e1e2;
@@ -14,12 +14,31 @@
 .cart-message-size{
     font-size: 12px;
 }
-.next-batch{
+.bannar{
+    padding-top:5%;
+    padding-bottom: 15%;
+}
+ .next-batch{
     position: relative;
     top: -90px;
 }
+.indicate{
+    position:relative;
+    top:550px
+}
+@media only screen and (max-width:668px) {
+    .next-batch{
+        position: relative;
+        top:10px;
+    }
+    .indicate{
+        position: relative;
+        top:850px;
+    }
+    
+}
 .btn-next-batch{
-    width: 80%;
+    width:fit-content;
     padding: 0px 5px;
     margin: auto;
 }
@@ -33,13 +52,13 @@
     background: #F5F7FF;
 }
 .project-bg{
-    background:#cfd0d1;
+    background:#dfdfe0;
 }
 .course-speciality-img img{
     width: 40%;
 }
 .bg-about{
-    background: rgb(209, 207, 207);
+    background: #F5F7FF;
 }
 .cursor-pointer{
     cursor: pointer;

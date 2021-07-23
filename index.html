@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programming Hero Clone</title>
     <!-- favicon -->
-    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -21,10 +21,10 @@
 <body>
     <!-- header section start -->
     
-    <header class="bg-common-color pb-5">
-        <section class="container overflow-hidden">
+    <header class="bg-common-color sticky-top">
+        
             <!-- navbar start  -->
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-common-color ">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-common-color ">
                 <div class="container">
                   <a class="navbar-brand" href="#">
                       <img src="images/mainlogo.png" alt="">
@@ -73,11 +73,14 @@
                   </div>
                 </div>
             </nav>
-            <!-- navbar end  -->
-
+    </header>
+    <!-- header section end -->
             <!-- slider start  -->
+    <section class="bg-common-color bannar">
+        <section class="container">
+            
             <div id="carouselExampleIndicators" class="carousel slide carousel-fade " data-bs-ride="carousel">
-                <div class="carousel-indicators">
+                <div class="carousel-indicators indicate">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -85,7 +88,7 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
                   </div>
-                <div class="carousel-inner my-5 py-5">
+                <div class="carousel-inner ">
                   <div class="carousel-item active">
                         <div class="row d-flex align-items-center">
                             <div class="col-md-7 text-white">
@@ -187,11 +190,11 @@
                     <span class="visually-hidden">Next</span>
                   </button> -->
               </div>
-            <!-- slider end  -->
-
+            
         </section>
-    </header>
-    <!-- header section end -->
+    </section>
+    <!-- slider end  -->
+    
     <!-- main section start  -->
     <main>
         <!-- next batch secction start  -->
@@ -201,7 +204,7 @@
                 <div class="col-mid-10 shadow mb-5 bg-body rounded px-3 py-5">
                     <h3 class="text-center py-3 my-3 fw-bolder">পরবর্তী ব্যাচের সময় সূচি</h3>
                     <div class="row fw-bold">
-                        <div class="d-flex justify-content-evenly">
+                        <div class="d-flex flex-column text-center text-lg-start flex-md-row justify-content-evenly">
                             <div class="col-md-4">
                                 <p>রেজিস্ট্রেশন শুরু: ডিসেম্বর ১০, ২০২১ (শুক্রবার)</p>
                                 <p>রেজিস্ট্রেশন শেষ: ডিসেম্বর ২৪, ২০২১ (শুক্রবার)</p>
@@ -213,8 +216,8 @@
                         </div>
                     </div>
                     <div class="d-flex align-items-center justify-content-evenly bg-common-color py-1 my-4 text-white rounded-pill btn-next-batch">
-                       <div>
-                        <h5>তুমি ৫ম ব্যাচে এনরোল করতে আগ্রহি হলে, ওয়েবসাইটে রেজিস্ট্রেশন করে রাখো</h5>
+                       <div class="d-none d-md-block">
+                        <h5 class="mb-0 px-2">তুমি ৫ম ব্যাচে এনরোল করতে আগ্রহি হলে, ওয়েবসাইটে রেজিস্ট্রেশন করে রাখো</h5>
                        </div>
                         <div class=" d-flex align-items-center justify-content-center btn btn-danger rounded-pill ">
                             <a class=" py-2 px-3 text-white text-decoration-none" href="#">Continue course</a>
@@ -231,7 +234,7 @@
             <h3 class="fw-bold text-center mb-5">এই কোর্স থেকে কি কি শিখতে পারবে:</h3>
             <div>
                 <div class="row">
-                    <div class="col-md-5 animate__animated animate__backInLeft animate__delay-1s">
+                    <div class="col-md-5 mb-5 animate__animated animate__backInLeft animate__delay-1s">
                         <div class="shadow-lg bg-body rounded">
                             <div class="card p-3">
                                 <img src="images/coursePoster.png" class="card-img-top" alt="...">
@@ -318,7 +321,7 @@
         <!-- course speciality section start  -->
         <section class="course-speciality py-5">
             <div class="container ">
-                <div class="w-50 bg-white pt-3 my-4 shadow mx-auto d-flex justify-content-evenly">
+                <div class=" bg-white pt-3 my-4 shadow mx-auto d-flex justify-content-evenly">
                     <div class="d-flex border-bottom border-danger border-5 flex-column align-items-center">
                         <h1><i class="fas fa-star text-danger"></i></h1>
                         <p>এই কোর্সের বিশেষত্ব কি?</p>
@@ -329,7 +332,7 @@
                     </div>
                 </div>
                 <div class="row gy-3 course-speciality-img animate__animated animate__fadeInUpBig">
-                    <div  class="col-md-3 d-block d-lg-flex">
+                    <div  class="col-12 col-md-4 col-lg-3">
                         <div  class=" bg-white p-4 rounded-3 shadow">
                             <img src="images/about1.png" alt="">
                             <p class="fw-bold mt-3">এইটা কমপ্লিট ওয়েব ডেভেলপমেন্ট এর কোর্স:</p>
@@ -337,7 +340,7 @@
                             <button type="button" class="btn btn-danger">আরও দেখুন</button>
                         </div>
                     </div>
-                    <div  class="col-md-3 d-block d-lg-flex">
+                    <div  class="col-12 col-md-4 col-lg-3">
                         <div  class=" bg-white p-4 rounded-3 shadow">
                             <img src="images/about2.png" alt="">
                             <p class="fw-bold mt-3">আনলিমিটেড সাপোর্ট:</p>
@@ -345,7 +348,7 @@
                             <button type="button" class="btn btn-danger">আরও দেখুন</button>
                         </div>
                     </div>
-                    <div  class="col-md-3 d-block d-lg-flex">
+                    <div  class="col-12 col-md-4 col-lg-3">
                         <div  class=" bg-white p-4 rounded-3 shadow">
                             <img src="images/about3.png" alt="">
                             <p class="fw-bold mt-3">স্পেশাল ইন্টারভিউ প্রিপারেশন গ্রূপ:</p>
@@ -353,7 +356,7 @@
                             <button type="button" class="btn btn-danger">আরও দেখুন</button>
                         </div>
                     </div>
-                    <div  class="col-md-3 d-block d-lg-flex">
+                    <div  class="col-12 col-md-4 col-lg-3">
                         <div  class=" bg-white p-4 rounded-3 shadow">
                             <img src="images/about4.png" alt="">
                             <p class="fw-bold mt-3">জব প্লেসমেন্ট কোচ:</p>
@@ -361,7 +364,7 @@
                             <button type="button" class="btn btn-danger">আরও দেখুন</button>
                         </div>
                     </div>
-                    <div  class="col-md-3 d-block d-lg-flex">
+                    <div  class="col-12 col-md-4 col-lg-3">
                         <div  class=" bg-white p-4 rounded-3 shadow">
                             <img  src="images/about5.png" alt="">
                             <p class="fw-bold mt-3">লাইভ কনচেপচুয়াল সেশন:</p>
@@ -369,7 +372,7 @@
                             <button type="button" class="btn btn-danger">আরও দেখুন</button>
                         </div>
                     </div>
-                    <div  class="col-md-3 d-block d-lg-flex">
+                    <div  class="col-12 col-md-4 col-lg-3">
                         <div  class=" bg-white p-4 rounded-3 shadow">
                             <img src="images/about6.png" alt="">
                             <p class="fw-bold mt-3">Advance ক্রাশ কোর্স (ACC):</p>
@@ -377,7 +380,7 @@
                             <button type="button" class="btn btn-danger">আরও দেখুন</button>
                         </div>
                     </div>
-                    <div  class="col-md-3 d-block d-lg-flex">
+                    <div  class="col-12 col-md-4 col-lg-3">
                         <div  class=" bg-white p-4 rounded-3 shadow">
                             <img src="images/about7.png" alt="">
                             <p class="fw-bold mt-3">অফলাইন ভিডিও দেখার সুযোগ</p>
@@ -385,7 +388,7 @@
                             <button type="button" class="btn btn-danger">আরও দেখুন</button>
                         </div>
                     </div>
-                    <div  class="col-md-3 d-block d-lg-flex">
+                    <div  class="col-12 col-md-4 col-lg-3">
                         <div  class=" bg-white p-4 rounded-3 shadow">
                             <img src="images/about8.png" alt="">
                             <p class="fw-bold mt-3">ইন্টারন্যাশনাল জব প্লেসমেন্ট:</p>
@@ -406,8 +409,8 @@
                     <div class="col-md-6 shadow">
                         <div class="py-3">
                             <img class="w-100 rounded-3 mb-3" src="images/coursePoster.png" alt="">
-                            <div class=" d-flex align-items-center justify-content-between btn btn-danger rounded-pill w-100">
-                                <a class=" py-2 px-3 text-white text-decoration-none" href="#">Continue course</a>
+                            <div class=" d-flex align-items-center justify-content-between btn btn-danger rounded-pill w-auto">
+                                <a class=" py-2 px-3 text-white fs-5 text-center text-decoration-none" href="#">Continue course</a>
                                 <i class="fas fa-arrow-circle-right fs-2"></i>
                             </div>
                         </div>
@@ -535,7 +538,7 @@
         <!-- project section end  -->
         <!-- about Jhankar Mahabub -->
         <section class="about bg-about">
-            <div class="container mt-4 p-2">
+            <div class="container p-2">
                 <div class="row py-5 px-3">
                     <div class="col-md-4 animate_animated animate__fadeInLeft">
                         <img src="images/jankar.png" alt="">
@@ -590,6 +593,9 @@
                 </div>
             </div>
         </section>
+        <div>
+            <p class="text-white text-center text-light">All rights reserved by Bidyut Biswas &copy; 2021 </p>
+        </div>
     </footer>
     <!-- footer section end  -->
 
